@@ -16,7 +16,7 @@ let package = Package(
         // Targets can depend on other targets in this package and products from dependencies.
         .binaryTarget(
             name: "TurboLinkSDK",
-            url: "https://github.com/Branchcn/TurboLinkFramework/releases/download/1.0.9/TurboLinkSDK.xcframework.zip",
-            checksum: "7b099fc8161cb383a499542d308f7b7933c7df4b14c4c711ffc9bd04224962eb")
+            url: "https://github.com/Branchcn/TurboLinkFramework/releases/download/1.0.10/TurboLinkSDK.xcframework.zip",
+            checksum: "bab00d51a0d12f52018b0e0ec1350df52d3cc3fa01b3a04fe8c002bbd18eb0ef")
     ]
 )

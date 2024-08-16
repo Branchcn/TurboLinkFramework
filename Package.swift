@@ -17,6 +17,6 @@ let package = Package(
         .binaryTarget(
             name: "TurboLinkSDK",
             url: "https://github.com/Branchcn/TurboLinkFramework/releases/download/1.0.30/TurboLinkSDK.xcframework.zip",
-            checksum: "474093ef46e8912206490c1246cdfe13e63e001c50168862a9b36702862e7ac3")
+            checksum: "837a45090bcc9b511f9eb60fed497c810a7f9f15d4ca721f35306f8aca415406")
     ]
 )

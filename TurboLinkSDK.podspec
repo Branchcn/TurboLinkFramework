@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = 'TurboLinkSDK'
-    s.version          = '1.1.8'
+    s.version          = '1.1.9'
     s.summary          = 'TurboLink iOS SDK'
 
     s.description      = <<-DESC
@@ -16,8 +16,8 @@ Pod::Spec.new do |s|
     s.platform     = :ios
     s.swift_version = '5.0'
     s.source       = {
-        http: "https://github.com/Branchcn/TurboLinkFramework/releases/download/1.1.8/TurboLinkSDK.xcframework.zip",
-        sha256: "3cd81196d6b1ff545bb238083eb67335d658b041506d071a1762b02463e6cbd9"
+        http: "https://github.com/Branchcn/TurboLinkFramework/releases/download/1.1.9/TurboLinkSDK.xcframework.zip",
+        sha256: "4f259d386ef41dafa8fc1aa93888443feee4d9b3c0318e41af163ad0a12c4966"
     }
 
     s.ios.deployment_target = '12.0'

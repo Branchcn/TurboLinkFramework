@@ -15,6 +15,9 @@ Pod::Spec.new do |s|
     s.requires_arc = true
     s.platform     = :ios
     s.swift_version = '5.0'
+    s.source = {
+        :http => "https://github.com/Branchcn/TurboLinkFramework/releases/download/#{s.version}/TurboLinkSDK.xcframework.zip"
+    }
 
     s.ios.deployment_target = '12.0'
 
@@ -26,17 +29,11 @@ Pod::Spec.new do |s|
 
     # 静态库 subspec
     s.subspec 'Static' do |static|
-        static.source       = {
-            http: "https://github.com/Branchcn/TurboLinkFramework/releases/download/#{s.version}/TurboLinkSDK-Static.xcframework.zip",
-        }
-        static.vendored_frameworks = 'Frameworks/TurboLinkSDK-Static.xcframework'
+        static.vendored_frameworks = 'TurboLinkSDK-Static.xcframework'
     end
 
     # 动态库 subspec
     s.subspec 'Dynamic' do |dynamic|
-        dynamic.source       = {
-            http: "https://github.com/Branchcn/TurboLinkFramework/releases/download/#{s.version}/TurboLinkSDK-Dynamic.xcframework.zip",
-        }
-        dynamic.vendored_frameworks = 'Frameworks/TurboLinkSDK-Dynamic.xcframework'
+        dynamic.vendored_frameworks = 'TurboLinkSDK-Dynamic.xcframework'
     end 
 end

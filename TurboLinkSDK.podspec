@@ -1,7 +1,8 @@
 Pod::Spec.new do |s|
     s.name             = 'TurboLinkSDK'
-    s.version          = '1.1.28'
+    s.version          = '1.1.29'
     s.summary          = 'TurboLink iOS SDK'
+
 
     s.description      = <<-DESC
     TurboLink native track allows you to find what attracts new users to your app,
@@ -9,7 +10,8 @@ Pod::Spec.new do |s|
     all without having to update SDK.
     DESC
 
-    s.homepage         = 'https://www.branchcn.com'
+
+    s.homepage         = 'https://www.turbolink.ai'
     s.license          = { :type => 'Proprietary', :text => 'Copyright 2025 TurboLink Ltd. All rights reserved.' }
     s.author           = { 'Tech' => 'tech@branchcn.com' }
     s.requires_arc = true
@@ -19,21 +21,25 @@ Pod::Spec.new do |s|
         :http => "https://github.com/Branchcn/TurboLinkFramework/releases/download/#{s.version}/TurboLinkSDK.xcframework.zip"
     }
 
+
     s.ios.deployment_target = '12.0'
 
+
     s.ios.frameworks = 'SystemConfiguration', 'Network','UIKit'
-    s.ios.vendored_frameworks = 'TurboLinkSDK.xcframework'
-    
+
+
     # 默认使用静态库
     s.default_subspec = 'Static'
 
+
     # 静态库 subspec
     s.subspec 'Static' do |static|
-        static.vendored_frameworks = 'TurboLinkSDK-Static.xcframework'
+        static.vendored_frameworks = 'Static/TurboLinkSDK.xcframework'
     end
+
 
     # 动态库 subspec
     s.subspec 'Dynamic' do |dynamic|
-        dynamic.vendored_frameworks = 'TurboLinkSDK-Dynamic.xcframework'
-    end 
+        dynamic.vendored_frameworks = 'Dynamic/TurboLinkSDK.xcframework'
+    end
 end

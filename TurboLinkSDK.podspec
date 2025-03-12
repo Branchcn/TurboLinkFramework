@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = 'TurboLinkSDK'
-    s.version          = '1.1.31'
+    s.version          = '1.1.32'
     s.summary          = 'TurboLink iOS SDK'
 
 
